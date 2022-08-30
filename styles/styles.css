@@ -5,6 +5,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* General CSS */
+
 /* Header Section CSS Starts */
 
 .banner {
@@ -12,7 +14,7 @@ body {
 }
 
 .header-container {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
     background-color: #161616;
     border-radius: 20px;
@@ -51,8 +53,6 @@ body {
     transform: scale(.75);
 }
 
-
-
 .link-btn {
     border-radius: 5px;
     Padding: 16px 25px;
@@ -66,3 +66,87 @@ body {
 }
 
 /* Header Section CSS Ends */
+
+/* Blog Section CSS Starts */
+.blog-container {
+    width: 70%;
+    margin: 130px auto;
+}
+
+.blog-section {
+    display: flex;
+}
+
+.side-navbar {
+    width: 360px;
+    height: 312px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #161616;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.side-navbar a {
+    Padding: 20px 15px;
+    background-color: white;
+    text-decoration: none;
+    color: #161616;
+    margin: 20px 40px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.side-navbar a:last-child {
+    background-color: #DD0000;
+    color: white;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.blog {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.blog-img img {
+    width: 100%;
+}
+
+.blog-details {
+    padding: 20px 15px;
+    margin-top: 20px;
+}
+
+.blog-details a {
+    text-decoration: none;
+    padding: 5px 16px;
+    color: #161616;
+    border: 1px solid #161616;
+    border-radius: 10px;
+}
+
+.blog-details a:hover {
+    color: #E8E8E8;
+    background-color: #161616;
+}
+
+.blog-details span {
+    margin-right: 35px;
+    color: #161616;
+    opacity: 70%;
+}
+
+.blog-details span>i {
+    margin-right: 10px;
+}
+
+/* Blog Section CSS Ends */
