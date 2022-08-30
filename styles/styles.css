@@ -1,0 +1,68 @@
+/* General CSS  */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Header Section CSS Starts */
+
+.banner {
+    margin-top: 50px;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: #161616;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-details {
+    width: 65%;
+    color: white;
+    padding: 0 106px 110px;
+}
+
+.header-details h1 {
+    font-size: 70px;
+}
+
+.header-details p {
+    margin-bottom: 60px;
+}
+
+.header-image {
+    width: 100%;
+    text-align: center;
+}
+
+.header-image img {
+    width: 80%;
+    height: 100%;
+    margin-top: 33px;
+    transition: transform 1s linear;
+}
+
+.header-image:hover img {
+    transform: scale(.75);
+}
+
+
+
+.link-btn {
+    border-radius: 5px;
+    Padding: 16px 25px;
+    background-color: #DD0000;
+    text-decoration: none;
+    color: white;
+}
+
+.link-btn i {
+    margin-left: 20px;
+}
+
+/* Header Section CSS Ends */
