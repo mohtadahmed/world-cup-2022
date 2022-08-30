@@ -1,0 +1,9 @@
+.side-navbar a:first-child {
+    color: #E8E8E8;
+    background-color: #DD0000;
+}
+
+.side-navbar a:last-child {
+    color: black;
+    background-color: #E8E8E8;
+}
