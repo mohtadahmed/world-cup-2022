@@ -13,6 +13,37 @@ body {
     margin-top: 50px;
 }
 
+.football {
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: football-flick 10s linear infinite;
+}
+
+@keyframes football-flick {
+    0% {
+        transform: translate(5px);
+    }
+
+    25% {
+        transform: translate(1230px);
+    }
+
+    50% {
+        transform: translate(1230px, 630px);
+    }
+
+    75% {
+        transform: translateY(625px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+
 .header-container {
     width: 70%;
     margin: 0 auto;
@@ -29,8 +60,48 @@ body {
     padding: 0 106px 110px;
 }
 
+/* Animation for Sliding Texts and Changing Color */
+
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(200px);
+    }
+
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes color-changer {
+    0% {
+        color: #E45252;
+    }
+
+    25% {
+        color: #E4405F;
+    }
+
+    50% {
+        color: #DD0000;
+    }
+
+    100% {
+        color: #E8E8E8;
+    }
+
+}
+
+/* Animation for Sliding Text and Changing Color */
+
 .header-details h1 {
     font-size: 70px;
+    animation: moveToLeft 5s linear 10, color-changer 5s linear infinite;
 }
 
 .header-details p {
@@ -220,6 +291,10 @@ Responsive CSS Tags for small devices like Mobile Phones */
 @media screen and (max-width: 576px) {
 
     /* Header Section CSS Starts */
+    .football {
+        display: none;
+    }
+
     .header-container {
         width: 90%;
         flex-direction: column;
@@ -234,6 +309,7 @@ Responsive CSS Tags for small devices like Mobile Phones */
     .header-details h1 {
         font-size: 22px;
         margin-top: 28px;
+        animation: none;
     }
 
     .header-image img {
@@ -327,6 +403,10 @@ Responsive CSS Tags for Medium Devices like Tablet, Ipad or others
 */
 
 @media screen and (max-width: 992px) and (min-width: 577px) {
+    .football {
+        display: none;
+    }
+
     .header-container {
         width: 90%;
     }
@@ -338,6 +418,7 @@ Responsive CSS Tags for Medium Devices like Tablet, Ipad or others
 
     .header-details h1 {
         font-size: 40px;
+        animation: none;
     }
 
     .header-image img {
@@ -413,4 +494,34 @@ Responsive CSS Tags for Medium Devices like Tablet, Ipad or others
 /* Media Query Tag Declaration
 Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Screens
  */
-@media screen and (max-width: 1024px) and (min-width: 993px) {}
+@media screen and (max-width: 1440px) and (min-width: 993px) {
+    .header-container {
+        width: 90%;
+    }
+
+    .header-details {
+        width: 90%;
+        color: white;
+        padding: 20px 20px 80px 70px;
+    }
+
+    .header-details h1 {
+        font-size: 70px;
+    }
+
+    .header-details p {
+        margin-bottom: 60px;
+    }
+
+    .header-image img {
+        width: 90%;
+        height: 100%;
+        margin-top: 40px;
+        transition: transform 1s linear;
+    }
+
+    .blog-container {
+        width: 90%;
+    }
+
+}
