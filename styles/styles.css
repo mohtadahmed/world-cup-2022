@@ -21,29 +21,30 @@ body {
     animation: football-flick 10s linear infinite;
 }
 
+/* Animation for Medium Device */
 @keyframes football-flick {
     0% {
-        transform: translate(5px);
+        transform: translate(240px);
     }
 
     25% {
-        transform: translate(1230px);
+        transform: translate(1620px);
     }
 
     50% {
-        transform: translate(1230px, 630px);
+        transform: translate(1620px, 660px);
     }
 
     75% {
-        transform: translateY(625px);
+        transform: translate(240px, 660px);
     }
 
     100% {
-        transform: translateX(5px);
+        transform: translateX(240px);
     }
 }
 
-
+/* Animation for Medium Device */
 .header-container {
     width: 70%;
     margin: 0 auto;
@@ -491,10 +492,111 @@ Responsive CSS Tags for Medium Devices like Tablet, Ipad or others
     /* Footer Section CSS Ends */
 }
 
+
 /* Media Query Tag Declaration
 Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Screens
  */
-@media screen and (max-width: 1440px) and (min-width: 993px) {
+@media screen and (max-width: 1024px) and (min-width: 993px) {
+
+    /* Header Section CSS Starts */
+    .header-container {
+        width: 90%;
+    }
+
+    /* Animation for Medium Device */
+    @keyframes football-flick {
+        0% {
+            transform: translate(0px);
+        }
+
+        25% {
+            transform: translate(970px);
+        }
+
+        50% {
+            transform: translate(970px, 480px);
+        }
+
+        75% {
+            transform: translateY(480px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    /* Animation for Medium Device */
+
+    .header-details {
+        width: 90%;
+        padding: 10px 50px 70px 60px;
+    }
+
+    .header-details h1 {
+        font-size: 45px;
+    }
+
+    /* Header Section CSS Ends */
+
+    /* Blog Section CSS Starts */
+    .blog-container {
+        width: 88%;
+        margin: 110px auto;
+    }
+
+    .side-navbar {
+        width: 85%;
+    }
+
+    .blog-details span {
+        margin-right: 18px;
+    }
+
+    /* Blog Section CSS Starts */
+
+    /* Footer Section CSS Starts */
+    .footer {
+        padding: 20px;
+    }
+
+    .links a {
+        margin-right: 2em;
+    }
+
+    /* Footer Section CSS Ends */
+}
+
+/* Media Query Tag Declaration
+Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Screens
+ */
+@media screen and (max-width: 1440px) and (min-width: 1050px) {
+
+    /* Animation for Medium Device */
+    @keyframes football-flick {
+        0% {
+            transform: translate(70px);
+        }
+
+        25% {
+            transform: translate(1370px);
+        }
+
+        50% {
+            transform: translate(1370px, 695px);
+        }
+
+        75% {
+            transform: translateY(695px);
+        }
+
+        100% {
+            transform: translateX(0px);
+        }
+    }
+
+    /* Animation for Medium Device */
+
     .header-container {
         width: 90%;
     }
