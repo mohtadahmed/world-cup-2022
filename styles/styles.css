@@ -584,20 +584,33 @@ Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Scree
         }
 
         25% {
-            transform: translateX(1280px);
+            transform: translateX(1230px);
         }
 
         50% {
-            transform: translate(1280px, 700px);
+            transform: translate(1230px, 600px);
         }
 
         75% {
-            transform: translateY(700px);
+            transform: translateY(600px);
         }
 
         100% {
-            transform: translateX(00px);
+            transform: translateX(0px);
         }
+    }
+
+    .header-details {
+        width: 100%;
+        padding: 0 60px 100px;
+    }
+
+    .header-image img {
+        width: 90%;
+    }
+
+    .blog-container {
+        width: 85%;
     }
 
 }
