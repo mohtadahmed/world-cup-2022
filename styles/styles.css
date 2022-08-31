@@ -570,7 +570,44 @@ Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Scree
 /* Media Query Tag Declaration
 Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Screens
  */
-@media screen and (max-width: 1440px) and (min-width: 1050px) {
+@media screen and (max-width: 1366px) and (min-width: 1025px) {
+
+    /* Header Section CSS Starts */
+    .header-container {
+        width: 90%;
+    }
+
+    /* Animation for Medium Device */
+    @keyframes football-flick {
+        0% {
+            transform: translate(0px);
+        }
+
+        25% {
+            transform: translateX(1280px);
+        }
+
+        50% {
+            transform: translate(1280px, 700px);
+        }
+
+        75% {
+            transform: translateY(700px);
+        }
+
+        100% {
+            transform: translateX(00px);
+        }
+    }
+
+}
+
+/* Animation for Medium Device */
+
+/* Media Query Tag Declaration
+Responsive CSS Tags for Medium large devices like Medium Laptops or Medium Screens
+ */
+@media screen and (max-width: 1440px) and (min-width: 1368px) {
 
     /* Animation for Medium Device */
     @keyframes football-flick {
